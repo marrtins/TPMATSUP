@@ -1,4 +1,4 @@
-function botonVolverAlMenuPrincipal(h, posicion)
-%recibo la ventana donde quiero poner el boton, y la posicion que quiero que tenga el boton en la pantalla
-%consejo: la posicion generalmente seria [400 20 100 20]
-uicontrol(h, "style", "pushbutton", "string", "Menu Principal", "position", posicion, "callback", "delete(gcf), menuPrincipal()");
+function botonVolverAlMenuPrincipal(h, posicionX, posicionY)
+%recibo la ventana donde quiero poner el boton y las posiciones en x e y
+posicion = [posicionX posicionY 160 30];
+uicontrol(h, "style", "pushbutton", "string", "Ingresar Nueva Funcion", "position", posicion, "callback", "delete(gcf), menuPrincipal()");
