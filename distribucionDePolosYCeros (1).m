@@ -1,3 +1,0 @@
-function distribucionPolosYCeros(funcionTransferencia)
-pzmap(funcionTransferencia);
-endfunction
