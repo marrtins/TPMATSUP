@@ -6,8 +6,8 @@ polos = roots(denominador);
 
 
 h = dialog("name", "Indicador de Polos");
-botonVolverAlMenuPrincipal(h, [400 20 100 20]);
-botonCerrarVentana(h, [330 20 50 20]);
+botonVolverAlMenuPrincipal(h, 400 ,20);
+botonCerrarVentana(h, 330, 20);
 uicontrol(h, "style", "text", "string", "Estos son los Polos de la funcion:", "position",[20 400 250 10], "horizontalalignment", "left");
 
 
