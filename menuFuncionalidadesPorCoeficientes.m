@@ -1,6 +1,3 @@
-
-
-
 function menuFuncionalidadesPorCoeficientes (funcionTransferencia)
 
 funcionTransferencia = funcionTransferencia;
@@ -9,7 +6,7 @@ botonVolverAlMenuPrincipal(h, 400, 20);
 botonCerrarVentana(h, 300, 20 );
 
 b1 = uicontrol (h,"style", "pushbutton", "string", "Obtener la funcion transferencia", "position",[20 380 200 40], "callback", "");
-b2 = uicontrol (h,"style", "pushbutton", "string", "Indicar polos", "position",[20 330 200 40], "callback", "indicarPolos('funcionTransferencia')";
+b2 = uicontrol (h,"style", "pushbutton", "string", "Indicar polos", "position",[20 330 200 40], "callback", "indicarPolos('funcionTransferencia')");
 b3 = uicontrol (h,"style", "pushbutton", "string", "Indicar Ceros", "position",[20 280 200 40], "callback", "indicarCeros('funcionTransferencia')");
 b4 = uicontrol (h,"style", "pushbutton", "string", "Marcar ganancia", "position",[20 230 200 40], "callback", "dialog('name','Ganancia')");
 b5 = uicontrol (h,"style", "pushbutton", "string", "Obtener polos,ceros y ganancia", "position",[20 180 200 40], "callback", "dialog('name','Polos, Ceros y Ganancia')");
