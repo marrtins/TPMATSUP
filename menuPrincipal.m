@@ -1,6 +1,6 @@
 function menuPrincipal ()
 
-
+pkgload;
 h = dialog ("name", "Menu Principal");
 
 b0= uicontrol(h, "style", "text","string", "Seleccione una opción para ingresar la función transferencia: ","position",[105 300 400 40]);

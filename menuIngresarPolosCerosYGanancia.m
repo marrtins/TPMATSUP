@@ -1,4 +1,4 @@
-function menuIngresarPolosCerosYGanancia(cantidadDeCeros, cantidadDePolos)
+function menuIngresarPolosCerosYGanancia(cantidadDePolos, cantidadDeCeros)
 
 polosIngresados = [];
 cerosIngresados = [];
