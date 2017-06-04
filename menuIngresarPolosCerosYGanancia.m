@@ -12,7 +12,7 @@ yVariable = 380;
 polos = [];
 ceros = [];
 
-for i = 0:cantidadDePolos
+for i = 0:cantidadDePolos-1
 	string = strcat("Polo ", num2str(i));
 	string = strcat(string, ": ");
 	uicontrol(h, "style", "text", "string", string, "position",[xVariable yVariable 50 10], "horizontalalignment", "left");
@@ -29,7 +29,7 @@ uicontrol(h, "style", "text", "string", "Ingrese los ceros de la funcion:", "pos
 xVariable = 20;
 yVariable = 300;
 
-for i = 0:cantidadDeCeros
+for i = 0:cantidadDeCeros-1
 	string = strcat("Cero ", num2str(i));
 	string = strcat(string, ": ");
 	uicontrol(h, "style", "text", "string", string, "position",[xVariable yVariable 50 10], "horizontalalignment", "left");
