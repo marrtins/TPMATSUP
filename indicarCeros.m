@@ -7,7 +7,7 @@ ceros = roots(numerador);
 
 h = dialog("name", "Indicador de Ceros");
 botonVolverAlMenuPrincipal(h, 400, 20);
-botonCerrarVentana(h, 330, 20);
+botonCerrarVentana(h, 300, 20);
 uicontrol(h, "style", "text", "string", "Estos son los Ceros de la funcion:", "position",[20 400 250 10], "horizontalalignment", "left");
 
 
