@@ -11,7 +11,6 @@ yVariable = 380;
 
 polos = [];
 ceros = [];
-ganancia;
 
 for i = 0:cantidadDePolos
 	string = strcat("Polo ", num2str(i));
@@ -44,7 +43,7 @@ end
 
 yVariable = 230;
 
-uicontrol(h, "style", "text", "string", "Ingrese la gananacia:", "position",[20 yVariable 200 20], "horizontalalignment", "left");
+uicontrol(h, "style", "text", "string", "Ingrese la ganancia:", "position",[20 yVariable 200 20], "horizontalalignment", "left");
 uicontrol(h, "style", "edit", "position",[20 yVariable-30 100 20], "horizontalalignment", "left", "callback", "ganancia = obtenerNumeroDeUnCampoTexto(gcbo)");
 
 uicontrol(h, "style", "pushbutton", "string", "Continuar->", "position", [450 20 80 30], "callback", "delete(gcf),funcionTransferencia = obtenerLaFuncionTransferenciaIndicandoPZG(polos,ceros,ganancia),menuFuncionalidadesPZK(funcionTransferencia)");
