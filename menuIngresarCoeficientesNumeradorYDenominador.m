@@ -14,9 +14,9 @@ for i = 0:gradoNumerador
 	string = strcat(string, ": ");
 	uicontrol(h, "style", "text", "string", string, "position",[xVariable yVariable 50 10], "horizontalalignment", "left");
 	if(i == 0)
-	uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "coefNumerador = obtenerNumeroDeUnCampoTexto(gcbo)");
+	uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "deshabilitarCampoEdit(gcbo),coefNumerador = obtenerNumeroDeUnCampoTexto(gcbo)");
 	else
-	uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "coefNumerador = [coefNumerador obtenerNumeroDeUnCampoTexto(gcbo)]");	
+	uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "deshabilitarCampoEdit(gcbo),coefNumerador = [coefNumerador obtenerNumeroDeUnCampoTexto(gcbo)]");	
 	endif
 	xVariable = xVariable + 70;
 end
@@ -31,9 +31,9 @@ for i = 0:gradoDenominador
 	string = strcat(string, ": ");
 	uicontrol(h, "style", "text", "string", string, "position",[xVariable yVariable 50 10], "horizontalalignment", "left");
 	if(i == 0)
-	uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "coefDenominador = obtenerNumeroDeUnCampoTexto(gcbo)");
+	uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "deshabilitarCampoEdit(gcbo),coefDenominador = obtenerNumeroDeUnCampoTexto(gcbo)");
 	else
-		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "coefDenominador = [coefDenominador obtenerNumeroDeUnCampoTexto(gcbo)]");
+		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "deshabilitarCampoEdit(gcbo),coefDenominador = [coefDenominador obtenerNumeroDeUnCampoTexto(gcbo)]");
 	endif
 	xVariable = xVariable + 70;
 end

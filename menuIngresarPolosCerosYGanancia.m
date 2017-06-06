@@ -17,9 +17,9 @@ for i = 0:cantidadDePolos-1
 	string = strcat(string, ": ");
 	uicontrol(h, "style", "text", "string", string, "position",[xVariable yVariable 50 10], "horizontalalignment", "left");
 	if(i==0)
-		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "polos = obtenerNumeroDeUnCampoTexto(gcbo)");
+		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "deshabilitarCampoEdit(gcbo),polos = obtenerNumeroDeUnCampoTexto(gcbo)");
 	else
-		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "polos = [polos obtenerNumeroDeUnCampoTexto(gcbo)]");
+		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "deshabilitarCampoEdit(gcbo),polos = [polos obtenerNumeroDeUnCampoTexto(gcbo)]");
 	endif
 	xVariable = xVariable + 70;
 end
@@ -34,9 +34,9 @@ for i = 0:cantidadDeCeros-1
 	string = strcat(string, ": ");
 	uicontrol(h, "style", "text", "string", string, "position",[xVariable yVariable 50 10], "horizontalalignment", "left");
 	if(i==0)
-		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "ceros = obtenerNumeroDeUnCampoTexto(gcbo)");
+		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "deshabilitarCampoEdit(gcbo),ceros = obtenerNumeroDeUnCampoTexto(gcbo)");
 	else
-		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "ceros = [ceros obtenerNumeroDeUnCampoTexto(gcbo)]");
+		uicontrol(h, "style", "edit", "position",[xVariable yVariable-30 50 20], "horizontalalignment", "left", "callback", "deshabilitarCampoEdit(gcbo),ceros = [ceros obtenerNumeroDeUnCampoTexto(gcbo)]");
 	endif
 	xVariable = xVariable + 70;
 end
