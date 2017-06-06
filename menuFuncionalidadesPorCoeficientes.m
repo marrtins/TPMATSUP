@@ -11,7 +11,7 @@ b4 = uicontrol (h,"style", "pushbutton", "string", "Marcar ganancia", "position"
 b5 = uicontrol (h,"style", "pushbutton", "string", "Obtener polos,ceros y ganancia", "position",[20 180 200 40], "callback", "dialog('name','Polos, Ceros y Ganancia')");
 b6 = uicontrol (h,"style", "pushbutton", "string", "Distribucion de polos y ceros", "position",[20 130 200 40], "callback", "distribucionPolosYCeros(funcionTransferencia)");
 b7 = uicontrol (h,"style", "pushbutton", "string", "Indicar estabilidad del sistema", "position",[20 80 200 40], "callback", "indicarEstabilidad(funcionTransferencia)");
-b8 = uicontrol (h,"style", "pushbutton", "string", "Obtener todas las caracteristicas", "position",[20 30 200 40], "callback", "dialog('name','Caracteristicas')");
+b8 = uicontrol (h,"style", "pushbutton", "string", "Obtener todas las caracteristicas", "position",[20 30 200 40], "callback", "menuTodasLasCaracteristicas(funcionTransferencia)");
 
 botonVolverAlMenuPrincipal(h, 400, 20);
 botonCerrarVentana(h, 300, 20 );
