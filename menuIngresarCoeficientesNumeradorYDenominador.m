@@ -21,7 +21,7 @@ for i = 0:gradoNumerador
 	xVariable = xVariable + 70;
 end
 
-uicontrol(h, "style", "text", "string", "Ingrese los coeficientes del numerador:", "position",[20 320 250 20], "horizontalalignment", "left");
+uicontrol(h, "style", "text", "string", "Ingrese los coeficientes del denominador:", "position",[20 320 250 20], "horizontalalignment", "left");
 
 xVariable = 20;
 yVariable = 300;

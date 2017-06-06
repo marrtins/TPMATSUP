@@ -9,8 +9,8 @@ polosMenoresACero = 0;
 
 
 h = dialog("name", "Indicador de Estabilidad");
-botonVolverAlMenuPrincipal(h, 400 ,20);
-botonCerrarVentana(h, 300, 20);
+
+botonCerrarVentana(h, 400, 20);
 
 
 

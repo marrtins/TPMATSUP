@@ -1,7 +1,7 @@
 function menuTodasLasCaracteristicas (funcionTransferencia)
 
 h = dialog ("name", "Caracteristicas");
-posicionY = 250;
+posicionY = 270;
 
 %MUESTRA LA FUNCION TRANSFERENCIA
 f = evalc('funcionTransferencia');
@@ -10,6 +10,7 @@ f = evalc('funcionTransferencia');
  %MUESTRA LOS POLOS DE LA FUNCION
 denominador = funcionTransferencia.den{1};
 polos = roots(denominador);
+posicionY = posicionY -20;
  
  for i = 0:length(polos)-1
 	c = i + 1;
@@ -61,7 +62,6 @@ endif
 %BOTON PARA ABRIR LA DISTRIBUCION DE POLOS Y CEROS
 uicontrol (h,"style", "pushbutton", "string", "Distribucion de polos y ceros", "position",[20 posicionY-80 200 40], "callback", "distribucionPolosYCeros(funcionTransferencia)");
 
-botonVolverAlMenuPrincipal(h, 400, 20);
-botonCerrarVentana(h, 300, 20 );
+botonCerrarVentana(h, 400, 20 );
 
 endfunction
