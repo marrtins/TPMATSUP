@@ -5,7 +5,7 @@ posicionY = 270;
 
 %MUESTRA LA FUNCION TRANSFERENCIA
 f = evalc('funcionTransferencia');
- uicontrol(h, "style", "text", "string", f, "position",[10 posicionY 250 150], "horizontalalignment", "left");
+ uicontrol(h, "style", "text", "string", f, "position",[10 posicionY 400 150], "horizontalalignment", "left");
  
  %MUESTRA LOS POLOS DE LA FUNCION
 denominador = funcionTransferencia.den{1};
