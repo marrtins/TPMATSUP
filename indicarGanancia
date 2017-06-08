@@ -10,3 +10,4 @@ ganancia = num2str(k);
 uicontrol(h, "style", "text", "string", ganancia, "position",[20 380 250 10], "horizontalalignment", "left");
 
 endfunction
+
