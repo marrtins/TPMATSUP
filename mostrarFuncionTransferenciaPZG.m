@@ -36,4 +36,10 @@ for i = 0:length(polos)-1
 	altoVariable = altoVariable - 20;
 end
 
+[z,p,k] = tf2zp(funcionTransferencia);
+ganancia = num2str(k);
+string = strcat("Ganancia:  ", num2str(ganancia));
+
+uicontrol(h, "style", "text", "string", string, "position",[20 altoVariable 250 10], "horizontalalignment", "left");
+
 endfunction
