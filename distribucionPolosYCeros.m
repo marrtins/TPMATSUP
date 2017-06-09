@@ -1,5 +1,5 @@
 function distribucionPolosYCeros(funcionTransferencia)
   
-h = dialog("name", "Indicador de Ceros");
+h = dialog("name", "Distribucion de polos y ceros");
 pzmap(funcionTransferencia);
 endfunction
